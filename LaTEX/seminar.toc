@@ -1,0 +1,19 @@
+\select@language {croatian}
+\contentsline {section}{\numberline {1.}Uvod}{1}{section.1}
+\contentsline {section}{\numberline {2.}Model stvaranja slike u kamerama s ribljim okom i pregled metoda za kalibraciju}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1.}Perspektivni model stvaranja slike}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2.}Radijalno simetri\IeC {\v c}ni model stvaranja slike}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3.}Kalibracija kamere s ribljim okom}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1.}Kalibracija kamera s ribljim okom pomo\IeC {\'c}u uzorka}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2.}Auto-kalibracija kamera s ribljim okom}{7}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.}Funkcije izobli\IeC {\v c}enja kamere s ribljim okom}{8}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3.}Model stvaranja slike pomo\IeC {\'c}u uparenih kamera s ribljim okom i stereo kalibracija}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1.}Vanjska i relativna orijentacija}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2.}Epipolarna rektifikacija stereo sustava kamera s ribljim okom}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1.}Epipolarni ekvidistantni rektifikacijski model}{15}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.}Epipolarna stereografska rektifikacija}{15}{subsubsection.3.2.2}
+\contentsline {section}{\numberline {4.}Stereo kalibracija kamera s ribljim okom i primjer implementacije}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1.}Primjer implementacije rektifikacije i stereo kalibracije}{18}{subsection.4.1}
+\contentsline {section}{\numberline {5.}Zaklju\IeC {\v c}ak}{20}{section.5}
+\contentsline {section}{\numberline {6.}Literatura}{21}{section.6}
+\contentsline {section}{\numberline {7.}Sa\IeC {\v z}etak}{22}{section.7}

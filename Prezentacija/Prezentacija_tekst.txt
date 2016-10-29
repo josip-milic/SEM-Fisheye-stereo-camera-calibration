@@ -1,0 +1,130 @@
+Stereo kalibracija kamera s ribljim okom
+
+Naslov odnosno rad možemo podijeliti na tri dijela:
+1 - kamera s ribljim okom
+2 - kalibracija kamere s ribljim okom
+3 - stereo kalibracija kamera s ribljim okom
+
+
+3. Slide: kamera s ribljim okom: objektiv
+Riblje oko je naziv za ultra širokokutni objektiv koji ima žarišnu duljinu manju od uobičajene.
+Time se postiže široko vidno polje od 180 stupnjeva na dalje.
+
+
+4. Slide: kamera s ribljim okom: slika
+Slike nastale kamerom s ribljim okom imaju jako radijalno izobličenje. Primjer je sprintana šahovnica i očito izobličenje.
+Potrebno je razumijeti kako kamera stvara sliku i uzrok izobličenja kako bi se ono ispravilo.
+
+
+5. Slide: model stvaranja slike, perspektivni i radijalni simetrični
+
+
+6. Slide: perspektivni model
+Perspektivna kamera može preslikati točke u uskom vidnom polju ispred ravnine slike kamere.
+Na slici se može vidjeti kut theta između glavne osi i upadajuće zrake.
+Perspektivni model se može zapisati kao r = žarišna duljina * tan(theta) gdje je r udaljenost između točke slike i ishodišta k.s. slike.
+Standardni perspektivni model preslikava točke scene M u optički centar kamere. Jedan od naziva modela je pinhole model ili model kamere s točkastim otvorom.
+Preslikavanje točke na ravninu slike je prikazan na slideu gdje je P projekcijska matrica.
+Ona se može dekomponirati u matrice kamere, rotacije i translacije. Rotacija i translacija je posebno označena jer su to ekstrinsični parametri.
+Matrica K se naziva matrica kamere i predstavlja instrinsične parametre kamere.
+
+
+7. i 8. slide: radijalno simetrični model 
+Perspektivni model stvaranja slike ne odgovara za kamere s ribljim okom no postoje drugi modeli koji se mogu iskoristiti.
+Na slici su primjeri kako izgledaju projekcije uz perspektivnu projekciju. 
+1 - perspektivna
+2 - stereografska
+3 - ekvidistantna
+4 - ekvisolidna
+5 - ortografska
+
+
+9. slide: kalibracija
+To su idealni radijalno simetrični modeli no u stvarnosti zbog nesavršene preciznosti izrade što je uzrok i nesavršenosti samih leća, postoje odstupanja od njih
+i zato nastaju izobličenja. Potrebno je obaviti postupak modeliranja projekcijskog modela za svaku kameru posebno.
+Taj postupak modeliranja se zove kalibracija kamere.
+
+
+10. slide: model stvaranja slike kamere s ribljim okom
+Na slici se može vidjeti model stvaranja slike pomoću kamere s ribljim okom. 
+Označena je i točka m' koja označava preslikavanje za perspektivni model.
+
+
+11. slide: kalibracija pomoću uzorka, auto-kalibracija
+Kalibracija se obično izvršava pomoću nekog uzorka s poznatom strukturom. Na slici su šahovnica i krugovi.
+Uzmu se fizičke mjere stvarnih 3D-točaka i zatim se uspoređuju s detektiranim pozicijama na slici, kutovi kvadrata, težišta krugova itd.
+Time se pronalazi matrica kamere odnosno njezini intrinsični parametri. 
+Uparivanjem kamera se dobiva mogućnost auto-kalibracije koja ne zahtijeva poznatu strukturu uzorka. 
+Takve metode zahtijevaju više od jedne slike pa se detektiraju razlike između dva položaja kamere.
+
+
+12. slide: aproksimacija radijalnog izobličenja
+Za aproksimaciju izobličenja se koriste razne funkcije od kojih neke možemo vidjeti na slideu. 
+To su
+1 - polinomni model ribljeg oka (4. red je dovoljan za simuliranje ribljeg oka)
+2 - model vidnog polja
+3 - transformacija ribljeg oka
+4 - model diobe
+
+
+13. slide: stereo kalibracija, uvod
+Stereo kamera je naziv za stereo sustav odnosno par kamera spojenih zajedno gdje jedna daje lijevu, a druga desnu sliku.
+Nije dovoljno kalibrirati svaku kameru, već se mora obratiti pozornost na njihove položaje u prostoru i njihovu relativnu orijentaciju.
+
+
+14. slide: vanjska i relativna orijentacija
+Vanjska orijentacija se opisuje kao transformacija koordinata 3D točke scene X_W u koordinate kamere X_CL lijeve kamere gdje se koristi
+matrica rotacije i translacijski vektor.
+Relativna orijentacija opisuje transformaciju koordinata u k.s. desne kamere. Slično kao za za vanjsku orijentaciju.
+
+
+15. slide: epipolarna rektifikacija, koncept
+Epipolarna rektifikacija je geometrijska transformacija para slika u par  slika s posebnim svojstvom, svaka točka scene X_i je projicirana u obje slike u istom retku.
+Kad se želi pronaći uparena točka dovoljno je promatrati samo red u kojem se točka nalazi.
+
+
+16. slide: problem rektifikacije s kamerama s ribljim okom
+No opet se komplicira sve zbog korištenja ribljeg oka jer je prisutno jako radijalno izobličenje.
+Ono se može vidjeti na slici. Desna kamera snima u sam centar objekta, a lijeva pokraj centra.
+Rezultat je par slika koje dosta razlikuju.
+
+
+17. slide: stvarna i virtualna stereo kamera, epipolarne ravnine 
+Rješenje je prebaciti se u virtualnu stereo kameru koja ima idealna svojstva:
+usporedne optičke osi,
+identične unutrašnje orijentacije,izostanak izobličenja
+i projekcijski centri stvarne i virtualne stereo kamere se nalaze na istoj lokaciji.
+U stereo sustavu s dva projekcijska centra sve epipolarne ravnine sijeku jedna drugu pod određenim kutom.
+Svaka ravnina je karakterizirana s nagibom beta.
+Konačno svaki redak rektificiranih slika mora odgovarati epipolarnoj ravnini.
+
+
+18. slide: postoje različiti modeli rektifikacije
+Kao što postoje različiti modeli projekcija, postoji i različiti modeli rektifikacija od kojih se neki bolje nose s izobličenjima.
+Na slici je primjer rektifikacije s epipolarnim ekvidistantnim rektifikacijskim modelom.
+On omogućuje rektifikaciju slika s vidnim polje širim od 180 stupnjeva.
+
+
+19. slide: stereo kalibracija kamera s ribljim okom
+Konačno na kraju dolazimo do stereo kalibracije kamera s ribljim okom. Potrebno je estimirati koordinate 3D-točaka preslikanih na ravninu slike, 
+intrinsične parametre lijeve i desne kamere, omjer između parametara, ekstrinzične parametre i koordinate stvarnih 3D-točaka.
+Estimacija se radi tako da se vrši iterativni samo-kalibrirajući postupak gdje se pokušava minimizirati
+reprojekcijska pogreška Omega između projekcijskog modela i stvarnih mjerernja.
+Nakon stereo kalibracije se izvodi rektifikacija.
+
+
+20. slide: primjeri rektifikacija
+Na slideu možemo vidjeti jedan primjer iz rada. Na prvoj slici se nalazi par originalnih slika.
+2 - perspektivna rektifikacija
+3 - ekvidistantna rektifikacija
+4 - stereografska rektifikacija
+
+
+21. slide: primjer presjeka slika, dubina
+Odabrana je ova zadnja, stereografska rektifikacija.
+Na zadnjem paru su odabrali presjek slika i dobili su oblak točaka. Na slici se mogu vidjeti odnosi položaja objekata, kacige i police s knjigama.
+
+
+
+
+

@@ -1,0 +1,55 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abraham}
+Steffen Abraham and Wolfgang Förstner.
+\newblock {Fish-Eye-Stereo Calibration and Epipolar Rectification}.
+\newblock {\em ISPRS Journal of photogrammetry and remote sensing},
+  59(5):278--288.
+
+\bibitem{Hartley}
+Richard Hartley and Andrew Zisserman.
+\newblock {\em Multiple View Geometry in computer vision}.
+\newblock Cambridge University Press, 2003.
+
+\bibitem{Kashyap}
+Vinay Kashyap Takmul Purushothama~Raju.
+\newblock {Fisheye Camera Calibration and Applications}.
+\newblock Master's thesis, Arizona State University, 2014.
+
+\bibitem{KenRockwell:Nikon}
+{Ken Rockwell}.
+\newblock Nikon 7.5mm f/5.6, 1966.
+\newblock [Online; provjereno 25.05.2016.].
+
+\bibitem{MichelThoby:Fisheye}
+{Michel Thoby}.
+\newblock About the various projections of the photographic objective lenses,
+  2012.
+\newblock [Online; provjereno 25.05.2016.].
+
+\bibitem{Ribaric01}
+Slobodan Ribarić.
+\newblock {\em Računalni vid, Prvo predavanje}.
+\newblock Fakultet elektrotehnike i računarstva, 2008.
+
+\bibitem{RoyMeunierCox}
+Ingemar Johansson~Cox Sebastien~Roy, Jean~Meunier.
+\newblock {Cylindrical rectification to minimize epipolar distortion}.
+\newblock pages 393--399. IEEE Computer Society, 1997.
+
+\bibitem{SzeliskiIntro}
+Richard Szeliski.
+\newblock Computer vision: Algorithms and applications.
+\newblock pages 23--29. Springer, September 2010.
+
+\bibitem{Chemnitz:Pinhole}
+{TU Chemnitz}.
+\newblock 2.1 camera models - the pinhole camera, 2005.
+\newblock [Online; provjereno 25.05.2016.].
+
+\bibitem{Wikipedia:Rectification}
+{Wikipedia}.
+\newblock Image rectification, 2016.
+\newblock [Online; provjereno 25.05.2016.].
+
+\end{thebibliography}

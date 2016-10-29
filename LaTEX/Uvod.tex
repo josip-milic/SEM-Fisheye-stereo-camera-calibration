@@ -1,0 +1,15 @@
+\documentclass[../seminar.tex]{subfiles}
+\begin{document}
+Percepcija struktura na temelju njihovih projekcija je trivijalna za ljude no ni nakon nekoliko desetljeća istraživanja u području spoznajne psihologije još nije potpuno jasno kako se ona ostvaruje.
+Zato ne iznenađuje činjenica da je njeno računalno ostvarenje vrlo složen problem. Računalni vid (engl. \textit{Computer vision, Machine Vision}) je područje računarske
+znanosti koje se bavi tim problemom i razvija teorijske i algoritamske temelje pomoću kojih se korisna informacija može automatski izlučiti i analizirati i to iz pojedine slike, skupa slika ili iz slijeda slika uporabom računala opće namjene ili specijaliziranog računala. \cite{Ribaric01}
+
+Razvoj računalnog vida je započeo još u 60-im godinama prošlog stoljeća, a popularizirao se početkom 2000-ih zahvaljujući, među ostalim razlozima, napretkom računalnih performansa, uređaja za digitalno snimanje i općenito računarske znanosti. Istraživači računalnog vida su razvijali i razvijaju matematičke postupke za prepoznavanje trodimenzionalnih struktura i prikaza objekata u slici. Danas zato imamo pouzdane postupke pomoću kojih se obavlja koristan automatiziran posao u djelatnostima koje nisu direktno vezane za računarsku znanost poput medicinske dijagnostike, očuvanje prometne sigurnosti i kontrole, strojne obrade i brojne druge. \cite{SzeliskiIntro}
+
+U posljednje vrijeme vrlo je snažan interes javnosti prema razvoju autonomnih vozila u kojima se postupci računalnog vida intenzivno koriste u kontekstu sigurnosti primjerice u situacijama u kojima se lidar \footnote{Lidar (spoj engleskih riječi svjetlost i radar, engl. \textit{light} i \textit{radar}) je tehnologija za mjerenje udaljenosti pomoću obasjavanja ciljne točke laserskom svjetlošću.} ne snalazi. U takvim slučajevima postupci računalnog vida se koriste za navigaciju i nadziranje, i poželjno je imati što veće vidno polje.
+To se može ostvariti zrcalima i rotirajućim ili pokretnim kamerama, a najčešće se u praksi koriste kamere s ribljim okom koje ne zahtijevaju dodatnu opremu. Uparivanjem takvih kamera izrađuje se stereo sustav koji ima mogućnost izlučivanja 3-D informacija iz vidnog polja velike širine. One su korisne za detekciju zapreka u navigaciji ili za rekonstrukciju objekata u svrhu nadziranja. \cite{Abraham}
+
+Pomoću kamere s infinitezimalnim (točkastim) otvorom (engl. \textit{pin-hole camera}) se može dobro aproksimirati geometrija klasičnih kamera no ne i kamera s ribljim okom. Također, stereo rekonstrukcija takvih kamera se značajno razlikuje od rekonstrukcije s uobičajenim kamerama i manje spominje u literaturi. Cilj ovog seminara je objasniti model kamere s ribljim okom, model njezine stereo verzije i konačno potrebne postupke za ostvarenje stereo rekonstrukcije pomoću kamera s ribljim okom.
+
+
+\end{document}

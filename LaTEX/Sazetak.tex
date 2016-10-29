@@ -1,0 +1,11 @@
+\documentclass[../seminar.tex]{subfiles}
+
+\begin{document}
+
+Kamera s ribljim okom ima svojstvo velike širine vidnog polja i zbog toga perspektivni model stvaranja slike nije dostatan. Predloženi su i opisani neki od radijalnih modela stvaranja slike koji su prikladniji za ovakvu vrstu kamere. Oni su idealni modeli i u stvarnosti zbog nesavršene preciznosti izrade leća, a zbog toga i nesavršenosti samih leća, postoje odstupanja od tih modela. Zato je potrebno obaviti postupak modeliranja projekcijskog modela za svaku kameru posebno koji se naziva kalibracija kamere. Razlikujemo samo-kalibrirajuće metode od metoda kalibracije koje zahtijevaju uzorak. Metode kalibracije se razlikuju i po korištenim funkcijama koje aproksimiraju izobličenje. Rezultat tih metoda su intrinsični i ekstrinsični parametri kamere. 
+
+Uparivanjem kamera dobiva se stereo kamera. Potrebno je prilagoditi metodu kalibracije za stereo sustav kako bi mogla određivati unutrašnje i vanjske orijentacije kamera. Koristi se i rektifikacija kako bi se dobile epipolarne slike čime se pojednostavljuje povezivanje uparenih točaka slika. Proces rektifikacije slika se može opisati kao reprojekcija 3D svijeta u virtualnu stereo kameru. Opisani su neki epipolarni rektifikacijski modeli.
+
+Konačno, prikazan je primjer kalibracije i rektifikacije pomoću para slika. Dobivenim parametrima i mapiranjem uparenih točaka slika napravljena je 3D-rekonstrukcija scene i prikazana kao oblak točaka. 
+
+\end{document}
